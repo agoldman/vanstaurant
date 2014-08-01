@@ -12,6 +12,14 @@ body{
   color: $blue;
 }
 
+form{
+  font-family: 'Helvetica';
+}
+
+label{
+  @extend .small-top-margin;
+}
+
 .inline{
   display: inline;
 }
@@ -63,6 +71,11 @@ a:hover {
   background-color: none;
   background: none;
   color: $blue;
+}
+
+.btn-primary{
+  background-color: $blue;
+  color: $beige;
 }
 
 .btn-default:hover{
