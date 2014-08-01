@@ -7,7 +7,7 @@
       <div class="row pull-right">
         <a href="/about" type="button" class="btn btn-default"> <h4> ABOUT US  </h4> </a>
       </div>
-      <div class="row text-center xxlarge-top-margin">
+      <div class="row text-center <%=  @menu ? 'xxlarge-top-margin' : 'xxxlarge-top-margin' %>">
         <h1> VANSTAURANT </h1>
       </div>
       <div class="row-bar text-center">
@@ -22,7 +22,9 @@
           </div>
       </div>
       <div class="row large-top-margin">
-        <h2 class="green-font text-center"> <%= link_to "MENU", @menu, class: "light"%> for <br>  Pine Creek - August 3 </h2>
+        <% if @menu %>
+          <h2 class="green-font text-center"> <%= link_to "MENU", @menu, class: "light"%> for <br>  Pine Creek - August 3 </h2>
+        <% end %>
       </div>
     </div>
   </div>
