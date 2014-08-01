@@ -1,10 +1,11 @@
+/* VARIABLES */
+
 $blue: #4F6D8A;
 $beige: #EAE5DE;
 $green: #B6B088;
+$yellow: #D5924A;
 
-.green-font{
-  color: $green;
-}
+/* TAGS */
 
 body{
   background-color: $beige;
@@ -20,6 +21,44 @@ label{
   @extend .small-top-margin;
 }
 
+h1{
+  font-size: 90px;
+}
+
+h2{
+  font-size: 60px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+h4{
+  font-size: 24px;
+}
+
+.blog h4{
+  margin-top: 20px;
+}
+
+/* FLASH */
+
+.notice{
+  background-color: $blue;
+  color: $beige;
+  font-family: 'Helvetica';
+  text-align: center;
+  @extend h3;
+}
+
+/* Nav */
+
+.admin-nav{
+  font-size: 30px;
+}
+
+/* DISPLAY */
+
 .inline{
   display: inline;
 }
@@ -28,10 +67,18 @@ label{
   display: inline-block;
 }
 
+/* TEXT */
+
 .underline{
   border-bottom-style: solid;
   border-bottom-width: 2px;
 }
+
+.green-font{
+  color: $green;
+}
+
+/* LINKS AND BUTTONS */
 
 a{
   color: $blue;
@@ -49,7 +96,6 @@ a:hover {
   color: $green;
   text-decoration: none;
 }
-
 
 .btn{
   background-color: none;
@@ -84,21 +130,7 @@ a:hover {
   border-color: $green;
 }
 
-h1{
-  font-size: 90px;
-}
-
-h2{
-  font-size: 60px;
-}
-
-h3{
-  font-size: 30px;
-}
-
-h4{
-  font-size: 24px;
-}
+/* BOX MODEL */
 
 .small-neg-top-margin{
   margin-top: -10px;
@@ -132,9 +164,14 @@ h4{
   margin-top: 150px;
 }
 
-.blog h4{
-  margin-top: 20px;
+.medium-bottom-margin{
+  margin-bottom:30px;
 }
+
+.medium-bottom-padding{
+  padding-bottom:30px;
+}
+
 /****************** CUSTOM FONTS ***************/
 
 /* Regular */
