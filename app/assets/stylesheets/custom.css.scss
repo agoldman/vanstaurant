@@ -1,17 +1,90 @@
 $blue: #4F6D8A;
 $beige: #EAE5DE;
+$green: #B6B088;
 
-.blue-font {
-  color: $blue;
+.green-font{
+  color: $green;
 }
 
 body{
   background-color: $beige;
   font-family: 'League Gothic';
+  color: $blue;
+}
+
+.inline{
+  display: inline;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.underline{
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+a{
+  color: $blue;
+}
+
+a.light{
+  color: $green;
+}
+
+a.light:hover{
+  color: $blue;
+}
+
+a:hover {
+  color: $green;
+  text-decoration: none;
+}
+
+
+.btn{
+  background-color: none;
+  background: none;
+}
+
+.btn:visited{
+  background-color: none;
+  background: none;
+}
+
+.btn-default:visited{
+  background-color: none;
+  background: none;
+  color: $blue;
+}
+
+.btn-default{
+  background-color: none;
+  background: none;
+  color: $blue;
+}
+
+.btn-default:hover{
+  background: none;
+  color: $green;
+  border-color: $green;
 }
 
 h1{
   font-size: 90px;
+}
+
+h2{
+  font-size: 60px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+h4{
+  font-size: 24px;
 }
 
 .small-neg-top-margin{
@@ -22,14 +95,33 @@ h1{
   margin: 30px;
 }
 
+.small-top-margin{
+  margin-top: 10px;
+}
+
+.medium-top-margin{
+  margin-top: 30px;
+}
+
 .large-top-margin{
   margin-top: 50px;
 }
 
-.huge-top-margin{
+.xlarge-top-margin{
+  margin-top: 75px;
+}
+
+.xxlarge-top-margin{
+  margin-top: 100px;
+}
+
+.xxxlarge-top-margin{
   margin-top: 150px;
 }
 
+.blog h4{
+  margin-top: 20px;
+}
 /****************** CUSTOM FONTS ***************/
 
 /* Regular */

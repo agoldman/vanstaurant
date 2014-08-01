@@ -3,26 +3,32 @@
     <div class="col-md-6 col-md-offset-1">
       <%=image_tag("vanstaurant.jpg", class: "img-responsive center-block") %>
     </div>
-    <div class="col-md-4 blue-font">
-      <div class="row text-center huge-top-margin">
+    <div class="col-md-4">
+      <div class="row pull-right">
+        <a href="/about" type="button" class="btn btn-default"> <h4> ABOUT US  </h4> </a>
+      </div>
+      <div class="row text-center xxlarge-top-margin">
         <h1> VANSTAURANT </h1>
       </div>
       <div class="row-bar text-center">
           <div class="col-md-4"> 
-            <h2 class="small-neg-top-margin"> FOOD </h2>
+            <a href="#"> <h3 class="small-neg-top-margin"> FOOD </h3> </a>
           </div>
           <div class="col-md-4"> 
-            <h2 class="small-neg-top-margin"> SPRAY </h2>
+            <a href="#"> <h3 class="small-neg-top-margin"> SPRAY </h3> </a>
           </div>
           <div class="col-md-4"> 
-            <h2 class="small-neg-top-margin"> BUILDING </h2>
+            <a href="#"> <h3 class="small-neg-top-margin"> BUILDING </h3> </a>
           </div>
-        </h2>
       </div>
-
-      <div class="row blog">
-        <%= %>
+      <div class="row large-top-margin">
+        <h2 class="green-font text-center"> <%= link_to "MENU", @menu, class: "light"%> for <br>  Pine Creek - August 3 </h2>
       </div>
+    </div>
+  </div>
+    <div class="row blog large-top-margin">
+      <div class="col-md-10 col-md-offset-1">
+      <%= render @blogs %>
     </div>
   </div>
 </div>
