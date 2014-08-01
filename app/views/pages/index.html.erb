@@ -22,7 +22,9 @@
           </div>
       </div>
       <div class="row large-top-margin">
-        <h2 class="green-font text-center"> <%= link_to "MENU", @menu, class: "light"%> for <br>  Pine Creek - August 3 </h2>
+        <% if @menu %>
+          <h2 class="green-font text-center"> <%= link_to "MENU", @menu, class: "light"%> for <br>  Pine Creek - August 3 </h2>
+        <% end %>
       </div>
     </div>
   </div>
