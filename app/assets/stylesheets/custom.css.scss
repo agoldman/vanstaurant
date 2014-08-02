@@ -4,6 +4,8 @@ $blue: #4F6D8A;
 $beige: #EAE5DE;
 $green: #B6B088;
 $yellow: #D5924A;
+$dark-blue: #374D61;
+$red: #D60C12;
 
 /* TAGS */
 
@@ -11,10 +13,6 @@ body{
   background-color: $beige;
   font-family: 'League Gothic';
   color: $blue;
-}
-
-form{
-  font-family: 'Helvetica';
 }
 
 label{
@@ -41,6 +39,25 @@ h4{
   margin-top: 20px;
 }
 
+/* FORMS */
+
+form{
+  font-family: 'Helvetica';
+}
+
+.error{
+  input{
+    border-color: $red;
+  }
+  input:focus{
+    border-color: $red;
+  }
+  span {
+    color: $red;
+    display: block;
+  }
+}
+
 /* FLASH */
 
 .notice{
@@ -49,6 +66,14 @@ h4{
   font-family: 'Helvetica';
   text-align: center;
   @extend h3;
+}
+
+.alert{
+  color: $red;
+  font-size: 20px;
+  text-align: center;
+  @extend h3;
+  font-family: 'Helvetica';
 }
 
 /* Nav */
@@ -122,6 +147,12 @@ a:hover {
 .btn-primary{
   background-color: $blue;
   color: $beige;
+  border-color: $blue;
+}
+
+.btn-primary:hover{
+  background-color: $dark-blue;
+  border-color: $dark-blue;
 }
 
 .btn-default:hover{
