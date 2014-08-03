@@ -15,6 +15,10 @@ body{
   color: $blue;
 }
 
+li{
+  @extend .small-top-margin;
+}
+
 label{
   @extend .small-top-margin;
 }
@@ -35,16 +39,66 @@ h4{
   font-size: 24px;
 }
 
+hr{
+  background-color: $blue;
+  height: 3px;
+}
+
 .blog h4{
   margin-top: 20px;
 }
 
+.new-menu{
+  min-height: 800px;
+  background-size: 100%;
+  background-image:url('utah.png');
+  background-repeat: no-repeat;
+  background-position:center; 
+  
+}
+
+.admin{
+  min-height: 650px;
+  background-image:url('van2.jpg');
+  background-repeat: no-repeat;
+  background-position:center; 
+}
+
+.hidden{
+  display: none;
+}
+
+/* Backgrounds and Borders */
+
+.light-background{
+  background-color: $beige;
+}
+
+.blue-border{
+  border-style: solid;
+  border-size: 2px;
+  border-color: $blue;  
+}
+
+/* Fonts */
+.league{
+  font-family: 'League Gothic';
+}
+
+
 /* FORMS */
+
+.checkbox{
+  @extend .medium-left-margin
+}
 
 form{
   font-family: 'Helvetica';
 }
-
+.form-inputs {
+  @extend h4;
+  @extend .medium-left-margin;
+}
 .error{
   input{
     border-color: $red;
@@ -57,6 +111,18 @@ form{
     display: block;
   }
 }
+
+input[type=checkbox]{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+  @extend .small-top-margin;
+  @extend .medium-left-margin;
+}
+
 
 /* FLASH */
 
@@ -94,6 +160,10 @@ form{
 
 /* TEXT */
 
+.xlight {
+  color: $beige;
+}
+
 .underline{
   border-bottom-style: solid;
   border-bottom-width: 2px;
@@ -114,6 +184,10 @@ a.light{
 }
 
 a.light:hover{
+  color: $blue;
+}
+
+a.xlight:hover{
   color: $blue;
 }
 
@@ -161,6 +235,10 @@ a:hover {
   border-color: $green;
 }
 
+.admin-nav a, h3{
+  @extend .medium-right-margin;
+}
+
 /* BOX MODEL */
 
 .small-neg-top-margin{
@@ -195,13 +273,41 @@ a:hover {
   margin-top: 150px;
 }
 
+.xxxxlarge-top-margin{
+  margin-top: 200px;
+}
+
+.vlarge-top-margin{
+  margin-top: 250px;
+}
+
 .medium-bottom-margin{
   margin-bottom:30px;
 }
 
+.medium-right-margin{
+  margin-right: 50px;
+}
 .medium-bottom-padding{
   padding-bottom:30px;
 }
+
+.no-top-margin{
+  margin-top: 0px;
+}
+
+.large-bottom-margin{
+  margin-bottom: 50px;
+}
+
+.small-left-margin{
+  margin-left: 10px;
+}
+
+.medium-left-margin{
+  margin-left: 30px;
+}
+
 
 /****************** CUSTOM FONTS ***************/
 

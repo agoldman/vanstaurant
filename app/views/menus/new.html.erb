@@ -1,0 +1,21 @@
+<div class="new-menu">
+  <div class="col-md-8 col-md-offset-2 ">
+    <h1 class="text-center"> New Menu </h1>
+    <%= simple_form_for @menu, :html=> { class: "light-background xlarge-top-margin blue-border" } do |f| %>
+      <div class="form-inputs small-top-margin">
+        <div class="row">
+          <div class="col-md-6">
+            <%= f.input :name, label: "Menu Name" %>
+            <%= f.input :day %>
+          </div>
+          <div class="col-md-6">
+            <%= f.input :location %>
+            <%= f.input :directions, label: "Driving Directions" %>
+          </div>
+        </div>
+         <%= f.input :published, as: :boolean, inline_label: "Publish", label: false, input_html: { class: 'small-top-margin' }  %>
+        <%= f.button :submit, class: "btn btn-lg btn-primary medium-bottom-margin" %>
+      </div>
+    <% end %>
+  </div>
+</div>

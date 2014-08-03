@@ -9,4 +9,9 @@ class PagesController < ApplicationController
     render 'about'
   end
 
+  def admin
+    #authorize :page, :admin?
+    render 'admin'
+  end
+
 end

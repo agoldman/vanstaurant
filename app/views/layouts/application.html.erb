@@ -20,9 +20,11 @@
 
     <% if current_user %>
       <div class="row underline medium-bottom-margin medium-bottom-padding">
-        <div class="col-md-3 col-md-offset-1">
+        <div class="col-md-11 col-md-offset-1">
           <div class="admin-nav">
-            <%= link_to "Admin Sign Out", destroy_user_session_path, method: :delete %>
+            <h3 class="inline"> <%= "Logged in as " + current_user.name.upcase %></h3>
+            <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
+            <h2 class="pull-right no-top-margin"> <%= link_to "ADMIN", admin_path %> </h2>
           </div>
         </div>
       </div>
