@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140802044743) do
+ActiveRecord::Schema.define(version: 20140804175959) do
 
   create_table "blogs", force: true do |t|
     t.string   "title"
@@ -27,17 +27,17 @@ ActiveRecord::Schema.define(version: 20140802044743) do
     t.string "description"
   end
 
+  create_table "items_menus", force: true do |t|
+    t.integer "menu_id"
+    t.integer "item_id"
+  end
+
   create_table "menus", force: true do |t|
     t.string  "location"
     t.date    "day"
     t.string  "directions"
     t.string  "name"
     t.boolean "published"
-  end
-
-  create_table "menus_items", force: true do |t|
-    t.integer "menu_id"
-    t.integer "item_id"
   end
 
   create_table "users", force: true do |t|

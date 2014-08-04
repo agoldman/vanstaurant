@@ -1,29 +1,23 @@
-<div class="row">
-  <div class="col-md-6 col-md-offset-1">
-    <%=image_tag("vanstaurant.jpg", class: "img-responsive center-block") %>
+<div class="row welcome text-center">
+  <div class="col-md-2 col-md-offset-1">
+    <% if @menu %>
+    <a class="btn btn-xlg bright-green-btn medium-top-margin"> Menu - <%= @menu.location + " " + @menu.day.strftime("%A %b %d") %> </a> 
+    <% end %>
   </div>
-  <div class="col-md-4">
-    <div class="row pull-right">
-      <a href="/about" type="button" class="btn btn-default"> <h4> ABOUT US  </h4> </a>
+  <div class="col-md-4 col-md-offset-1">
+    <div class="row">
+      <h1 class="xxxxlarge-top-margin yellow-font title-size"> VANSTAURANT </h1>
     </div>
-    <div class="row text-center <%=  @menu ? 'xxlarge-top-margin' : 'xxxlarge-top-margin' %>">
-      <h1> VANSTAURANT </h1>
-    </div>
-    <div class="row-bar text-center">
-        <div class="col-md-4"> 
-          <a href="#"> <h3 class="small-neg-top-margin"> FOOD </h3> </a>
+    <div class="row text-center">
+        <div class="col-md-4 text-center "> 
+          <a class="yellow" href="#"> <h3 class="small-neg-top-margin no-right-margin"> FOOD </h3> </a>
         </div>
         <div class="col-md-4"> 
-          <a href="#"> <h3 class="small-neg-top-margin"> SPRAY </h3> </a>
+          <a class="yellow" href="#"> <h3 class="small-neg-top-margin no-right-margin"> SPRAY </h3> </a>
         </div>
         <div class="col-md-4"> 
-          <a href="#"> <h3 class="small-neg-top-margin"> BUILDING </h3> </a>
+          <a class="yellow"  href="#"> <h3 class="small-neg-top-margin no-right-margin "> BUILDING </h3> </a>
         </div>
-    </div>
-    <div class="row large-top-margin">
-      <% if @menu %>
-        <h2 class="green-font text-center"> <%= link_to "MENU", @menu, class: "light"%> for <br>  Pine Creek - August 3 </h2>
-      <% end %>
     </div>
   </div>
 </div>

@@ -3,9 +3,11 @@
 $blue: #4F6D8A;
 $beige: #EAE5DE;
 $green: #B6B088;
-$yellow: #D5924A;
+$yellow: #FFFFFE;
 $dark-blue: #374D61;
 $red: #D60C12;
+$bright-green: #CDD670;
+$brighter-green: #F7FF9F;
 
 /* TAGS */
 
@@ -57,6 +59,16 @@ hr{
   
 }
 
+.welcome{
+  height: 450px;
+  min-width: 100%;
+  background-size: 100%;
+  background-image:url('van-large.jpg');
+  background-repeat: no-repeat;
+  background-position:center; 
+
+}
+
 .admin{
   min-height: 650px;
   background-image:url('van2.jpg');
@@ -85,6 +97,29 @@ hr{
   font-family: 'League Gothic';
 }
 
+.title-size{
+  font-size: 120px;
+}
+
+.green-font{
+  color: $green;
+}
+
+.yellow-font{
+  color: $yellow; 
+}
+
+/* BACKGROUNDS */
+
+.green-background{
+  background-color: $green;
+  color: $beige;
+}
+
+.blue-background{
+  background-color: $blue;
+  color: $green;
+}
 
 /* FORMS */
 
@@ -179,15 +214,19 @@ a{
   color: $blue;
 }
 
-a.light{
+a.green{
   color: $green;
 }
 
-a.light:hover{
+a.green:hover{
   color: $blue;
 }
 
-a.xlight:hover{
+a.yellow{
+  color: $yellow;
+}
+
+a.yellow:hover{
   color: $blue;
 }
 
@@ -199,6 +238,21 @@ a:hover {
 .btn{
   background-color: none;
   background: none;
+  border-radius: 2px; 
+}
+
+.btn-xlg{
+  font-size: 25px;
+}
+
+.bright-green-btn{
+  background-color: $bright-green;
+  color: $yellow;
+}
+
+.bright-green-btn:hover{
+  background-color: $brighter-green;
+  color: $yellow;
 }
 
 .btn:visited{
@@ -222,6 +276,12 @@ a:hover {
   background-color: $blue;
   color: $beige;
   border-color: $blue;
+}
+
+.btn-primary-green{
+  background-color: $green;
+  color: $beige;
+  border-color: $green;
 }
 
 .btn-primary:hover{
@@ -278,6 +338,10 @@ a:hover {
 }
 
 .vlarge-top-margin{
+  margin-top: 500px;
+}
+
+.vlarge-top-margin{
   margin-top: 250px;
 }
 
@@ -306,6 +370,10 @@ a:hover {
 
 .medium-left-margin{
   margin-left: 30px;
+}
+
+.no-right-margin{
+  margin-right: 0px;
 }
 
 
