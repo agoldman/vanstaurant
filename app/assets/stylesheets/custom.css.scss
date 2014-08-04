@@ -53,7 +53,7 @@ hr{
 .new-menu{
   min-height: 800px;
   background-size: 100%;
-  background-image:url('utah.png');
+  background-image:image-url('utah.png');
   background-repeat: no-repeat;
   background-position:center; 
   
@@ -63,7 +63,7 @@ hr{
   height: 450px;
   min-width: 100%;
   background-size: 100%;
-  background-image:url('van-large.jpg');
+  background-image:image-url('van-large.jpg');
   background-repeat: no-repeat;
   background-position:center; 
 
@@ -71,7 +71,7 @@ hr{
 
 .admin{
   min-height: 650px;
-  background-image:url('van2.jpg');
+  background-image:image-url('van2.jpg');
   background-repeat: no-repeat;
   background-position:center; 
 }
