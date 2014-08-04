@@ -1,4 +1,9 @@
 Vanstaurant::Application.routes.draw do
+
+    namespace :mercury do
+      resources :images
+    end
+  mount Mercury::Engine => '/'
   devise_for :users, :path => 'admin', :path_names => { :sign_in => "login", :sign_out => "logout", :sign_up => "register" }
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

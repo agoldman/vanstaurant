@@ -45,6 +45,10 @@ gem 'devise'
 
 gem 'simple_form'
 
+gem 'mercury-rails', :git => 'git://github.com/jejacks0n/mercury.git'
+
+gem 'jquery-migrate-rails'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -61,3 +65,4 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'paperclip'
