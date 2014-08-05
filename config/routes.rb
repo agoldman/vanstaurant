@@ -3,6 +3,7 @@ Vanstaurant::Application.routes.draw do
     namespace :mercury do
       resources :images
     end
+
   mount Mercury::Engine => '/'
   devise_for :users, :path => 'admin', :path_names => { :sign_in => "login", :sign_out => "logout", :sign_up => "register" }
   # The priority is based upon order of creation: first created -> highest priority.
@@ -15,7 +16,9 @@ Vanstaurant::Application.routes.draw do
 
   resources :menus
   resources :users
-  resources :blogs
+  resources :blogs  do
+    collection { put :mercury_create }
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
