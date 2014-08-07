@@ -46,6 +46,10 @@ hr{
   height: 3px;
 }
 
+p{
+  font-family: "Helvetica";
+}
+
 .blog h4{
   margin-top: 20px;
 }
@@ -108,7 +112,6 @@ hr{
 .yellow-font{
   color: $yellow; 
 }
-
 /* BACKGROUNDS */
 
 .green-background{
@@ -119,6 +122,10 @@ hr{
 .blue-background{
   background-color: $blue;
   color: $green;
+}
+
+.red-font{
+  color: $red;
 }
 
 /* FORMS */
@@ -260,7 +267,7 @@ a:hover {
 
 .btn-primary{
   background-color: $blue;
-  color: $beige;
+  color: $yellow;
   border-color: $blue;
 }
 
@@ -362,6 +369,13 @@ a:hover {
   margin-right: 0px;
 }
 
+.small-right-margin{
+  margin-right: 10px;
+}
+
+.small-left-margin{
+  margin-left: 10px;
+}
 
 /****************** CUSTOM FONTS ***************/
 

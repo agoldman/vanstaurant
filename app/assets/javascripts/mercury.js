@@ -100,7 +100,7 @@ window.Mercury = {
           redo:                ['Redo', 'Redo your last action'],
           sep:                 ' '
           },
-        insertLink:            ['Link', 'Insert Link', { modal: '/mercury/modals/link.html', regions: ['full', 'markdown'] }],
+        insertLink:            ['Link', 'Insert Link', { modal: '/assets/link_updated.html', regions: ['full', 'markdown'] }],
         insertMedia:           ['Media', 'Insert Media (images and videos)', { modal: '/mercury/modals/media.html', regions: ['full', 'markdown'] }],
         insertTable:           ['Table', 'Insert Table', { modal: '/mercury/modals/table.html', regions: ['full', 'markdown'] }],
         insertCharacter:       ['Character', 'Special Characters', { modal: '/mercury/modals/character.html', regions: ['full', 'markdown'] }],
@@ -334,7 +334,35 @@ window.Mercury = {
     // button, or manually with `Mercury.trigger('action', {action: 'barrelRoll'})`
     globalBehaviors: {
       exit: function() { window.location.href = this.iframeSrc() },
-      barrelRoll: function() { $('body').css({webkitTransform: 'rotate(360deg)'}) }
+      barrelRoll: function() { $('body').css({webkitTransform: 'rotate(360deg)'}) },
+
+      save: function() {
+        var published = { "published" : $("#mercury_iframe").contents().find("#published").is(":checked") }
+        var total_obj = $.extend(published, this.serialize());
+        var data = top.JSON.stringify(total_obj, null, '  ');
+        var url, _ref, _ref1;
+
+        url = (_ref = (_ref1 = this.saveUrl) != null ? _ref1 : Mercury.saveUrl) != null ? _ref : this.iframeSrc();
+        jQuery.ajax(url, {
+          headers: Mercury.ajaxHeaders(),
+          type: 'PUT',
+          dataType: 'json',
+          data: total_obj,
+          success: (function(_this) {
+            return function() {
+              Mercury.changes = false;
+              alert("These changes were saved with love.");
+            };
+          })(this),
+          error: (function(_this) {
+            return function() {
+              return alert("Mercury was unable to save to the url: " + url);
+            };
+          })(this)
+        });
+
+
+       }
       },
 
 
@@ -442,7 +470,7 @@ window.Mercury = {
   // ## Silent Mode
   //
   // Turning silent mode on will disable asking about unsaved changes before leaving the page.
-  silent: false,
+  silent: true,
 
   // ## Debug Mode
   //
@@ -450,3 +478,4 @@ window.Mercury = {
   debug: false
 
 };
+

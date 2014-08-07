@@ -1,20 +1,45 @@
 <script>
-jQuery(window).on('mercury:ready', function() {
-  Mercury.saveUrl = '/blogs/mercury_create';
-});
+  jQuery(window).on('mercury:ready', function() {
+    Mercury.saveUrl = '/blogs/mercury_create';
+  });
+
 </script>
 
 <div data-no-turbolink>
+ 
+  <div class="row">
+    <h1 class="text-center"> New Blog</h1>
 
-  <div class="col-md-10 col-md-offset-1">
-    <h2> 
-      <div id="blog_title" data-mercury="full">
-        <%= raw @blog.title %>
+    <hr>
+  </div>
+
+
+  <div class="row">
+    <div class="test col-md-10 col-md-offset-1">
+      <h2> 
+        <div id="blog_title" data-mercury="full">
+          <%= raw @blog.title %>
+        </div>
+      </h2>
+
+      <div id="blog_content" data-mercury="full">
+        <p>
+          <%= raw @blog.content %>
+        </p>
       </div>
-    </h2>
-    <div id="blog_content" data-mercury="full">
-      <%= raw @blog.content %>
     </div>
   </div>
+
+  <div class="row">
+
+    <hr>
+    <div class="test col-md-2 col-md-offset-1">
+      <form class="small-top-margin">
+        <%= check_box_tag("published", "1", @blog.published ) %>
+        <label class="small-left-margin"> Publish! </label>
+      </form>
+    </div>
+  </div>
+   
 </div>
 

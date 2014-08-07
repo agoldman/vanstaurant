@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
   def index
-    @blogs = Blog.all
+    @blogs = Blog.published
     @menu = Menu.latest if Menu.upcoming?
   end
 
