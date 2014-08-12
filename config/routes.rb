@@ -18,6 +18,7 @@ Vanstaurant::Application.routes.draw do
   resources :users
   resources :blogs  do
     collection { put :mercury_create }
+    collection { put :mercury_update }
   end
 
   # Example of regular route:

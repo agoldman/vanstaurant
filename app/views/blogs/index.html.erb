@@ -1,0 +1,9 @@
+<div class="row blog large-top-margin">
+  <div class="col-md-10 col-md-offset-1">
+    <h2> Click to view and edit </h2>
+    <% @blogs.each do |blog| %>
+      <p><%= blog.created_at.strftime("%A %B %d, %Y") %> <%=link_to blog.title, "/editor" + edit_blog_path(blog) %>  
+        <%= truncate(blog.content, length: 60) %>  </p>
+    <% end %>
+  </div>
+</div>

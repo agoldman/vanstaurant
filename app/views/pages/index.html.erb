@@ -1,32 +1,32 @@
 <div class="row welcome text-center">
-  <div class="col-md-2 col-md-offset-1">
+  <div class="col-xs-2 col-xs-offset-1">
     <% if @menu %>
     <a class="btn btn-xlg bright-green-btn medium-top-margin"> Menu - <%= @menu.location + " " + @menu.day.strftime("%A %b %d") %> </a> 
     <% end %>
   </div>
 
-  <div class="col-md-4 col-md-offset-1">
+  <div class="col-xs-4 col-xs-offset-1">
     <div class="row">
       <h1 class="xxxxlarge-top-margin yellow-font title-size"> VANSTAURANT </h1>
     </div>
     <div class="row text-center">
-        <div class="col-md-4 text-center "> 
+        <div class="col-xs-4 text-center "> 
           <a class="yellow" href="#"> <h3 class="small-neg-top-margin no-right-margin"> FOOD </h3> </a>
         </div>
-        <div class="col-md-4"> 
+        <div class="col-xs-4"> 
           <a class="yellow" href="#"> <h3 class="small-neg-top-margin no-right-margin"> SPRAY </h3> </a>
         </div>
-        <div class="col-md-4"> 
+        <div class="col-xs-4"> 
           <a class="yellow"  href="#"> <h3 class="small-neg-top-margin no-right-margin "> BUILDING </h3> </a>
         </div>
     </div>
   </div>
-  <div class="col-md-1 col-md-offset-2">
+  <div class="col-xs-1 col-xs-offset-2">
     <a class="btn btn-lg medium-top-margin btn-default" href="/about"> About Us </a>
   </div>
 </div>
 <div class="row blog large-top-margin">
-  <div class="col-md-10 col-md-offset-1">
+  <div class="col-xs-10 col-xs-offset-1">
     <%= render @blogs %>
   </div>
 </div>
