@@ -472,7 +472,21 @@ window.Mercury = {
   // ## Debug Mode
   //
   // Turning debug mode on will log events and other various things (using console.debug if available).
-  debug: false
+  debug: false,
+
+  onload: function() {
+    Mercury.on('ready', function() {
+
+      $.each($('#mercury_iframe').contents().find(".custom-checkbox"), function( key, value ) {
+        $(value).click(function() {
+          $.each($('#mercury_iframe').contents().find(".custom-checkbox"), function( key, value ) {
+            $(value).toggleClass("hidden");
+          });
+          $("#mercury_iframe").contents().find("#published").click();
+        });
+      });
+    });
+  }
 
 };
 

@@ -1,4 +1,9 @@
 <script>
+
+  $(function() {
+      jQuery(parent).trigger('initialize:frame');
+  });
+
   jQuery(window).on('mercury:ready', function() {
     Mercury.saveUrl = '/blogs/mercury_create';
   });
@@ -6,23 +11,17 @@
 </script>
 
 <div data-no-turbolink>
- 
-  <div class="row">
-    <h1 class="text-center"> New Blog</h1>
-
-    <hr>
-  </div>
 
 
-  <div class="row">
-    <div class="test col-md-10 col-md-offset-1">
+  <div class="row large-top-margin">
+    <div class="col-md-10 col-md-offset-1">
       <h2> 
         <div id="blog_title" data-mercury="full">
           <%= raw @blog.title %>
         </div>
       </h2>
 
-      <div id="blog_content" data-mercury="full">
+      <div id="blog_content" data-mercury="full" style="height:200px;">
         <p>
           <%= raw @blog.content %>
         </p>
@@ -30,15 +29,15 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row medium-top-margin text-center ">
 
-    <hr>
-    <div class="test col-md-2 col-md-offset-1">
-      <form class="small-top-margin">
-        <%= check_box_tag("published", "1", @blog.published ) %>
-        <label class="small-left-margin"> Publish! </label>
+      <form class="small-top-margin medium-font">
+        <%= check_box_tag("published", "1", @blog.published, class: "hidden") %>
+        <%= fa_icon "square-o", class: "no-margin custom-checkbox" %>
+        <%= fa_icon "check-square", class: "hidden custom-checkbox" %>
+        <label> Published </label>
       </form>
-    </div>
+
   </div>
    
 </div>

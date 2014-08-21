@@ -7,7 +7,7 @@ class BlogsController < ApplicationController
   def new
     @blog = Blog.new
     @blog.title = "Title"
-    @blog.content = "Here is some placeholder content. "
+    @blog.content = "Write the blog post here. Make it real good!"
   end
 
   def edit

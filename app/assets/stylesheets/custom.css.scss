@@ -97,6 +97,11 @@ p{
 }
 
 /* Fonts */
+
+.medium-font{
+  font-size: 25px;
+}
+
 .league{
   font-family: 'League Gothic';
 }
@@ -293,6 +298,10 @@ a:hover {
 }
 
 /* BOX MODEL */
+
+.no-margn{
+  margin: 0px;
+}
 
 .small-neg-top-margin{
   margin-top: -10px;
