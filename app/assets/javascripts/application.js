@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require jquery-migrate-min
+//= require skrollr
 //= require_tree .

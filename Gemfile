@@ -46,6 +46,7 @@ gem 'devise'
 gem 'simple_form'
 
 gem 'mercury-rails', :git => 'git://github.com/jejacks0n/mercury.git'
+gem 'skrollr-rails'
 
 gem 'jquery-migrate-rails'
 

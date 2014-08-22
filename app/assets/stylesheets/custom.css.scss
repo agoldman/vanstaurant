@@ -63,13 +63,15 @@ p{
   
 }
 
+
 .welcome{
+  background-attachment: fixed; 
   height: 450px;
   min-width: 100%;
   background-size: 100%;
   background-image:image-url('van-large.jpg');
   background-repeat: no-repeat;
-  background-position:center; 
+  background-position: 0px -325px;
 
 }
 
@@ -86,8 +88,12 @@ p{
 
 /* Backgrounds and Borders */
 
-.light-background{
+.beige-background{
   background-color: $beige;
+}
+
+.white-background{
+  background-color: $yellow;
 }
 
 .blue-border{
@@ -97,6 +103,10 @@ p{
 }
 
 /* Fonts */
+
+.green-font{
+  color: $green;
+}
 
 .medium-font{
   font-size: 25px;
