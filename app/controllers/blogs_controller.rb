@@ -39,7 +39,19 @@ class BlogsController < ApplicationController
   end
 
   def to_boolean(str)
-      str == 'true'
+    str == 'true'
+  end
+
+  def destroy
+    @blog = Blog.find(params[:id])
+    title = @blog.title
+    if @blog.destroy
+      flash[:notice] = "\"#{title}\" was deleted successfully."
+      redirect_to blogs_path
+    else
+      flash[:error] = "There was an error deleting this blog."
+      render :show
     end
+  end
 
 end

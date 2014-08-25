@@ -5,6 +5,7 @@ $beige: #EAE5DE;
 $green: #B6B088;
 $yellow: #FFFFFE;
 $dark-blue: #374D61;
+$darker-blue: #19354F;
 $red: #D60C12;
 $bright-green: #CDD670;
 $brighter-green: #F7FF9F;
@@ -48,6 +49,7 @@ hr{
 
 p{
   font-family: "Helvetica";
+  color: $yellow;
 }
 
 .blog h4{
@@ -104,12 +106,20 @@ p{
 
 /* Fonts */
 
+.blue-font{
+  color: $blue
+}
+
 .green-font{
   color: $green;
 }
 
 .medium-font{
   font-size: 25px;
+}
+
+.large-font{
+  font-size: 50px;
 }
 
 .league{
@@ -188,18 +198,18 @@ input[type=checkbox]{
 /* FLASH */
 
 .notice{
-  background-color: $blue;
-  color: $beige;
+  background-color: $brighter-green;
+  color: $yellow;
   font-family: 'Helvetica';
   text-align: center;
-  @extend h3;
+  @extend .medium-font;
 }
 
 .alert{
   color: $red;
   font-size: 20px;
   text-align: center;
-  @extend h3;
+  @extend .medium-font;
   font-family: 'Helvetica';
 }
 

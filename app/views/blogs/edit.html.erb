@@ -1,49 +1,5 @@
-<script>
-
-  jQuery(window).on('mercury:ready', function() {
-    Mercury.saveUrl = '/blogs/mercury_update';
-  });
-
-</script>
-
 <div data-no-turbolink>
-
-  <div id: "link" data-save-url: <%= mercury_update_blog_path(@blog) %> >
-  </div>
- 
-  <div class="row">
-    <h1 class="text-center"> New Blog</h1>
-
-    <hr>
-  </div>
-
-
-  <div class="row">
-    <div class="test col-md-10 col-md-offset-1">
-      <h2> 
-        <div id="blog_title" data-mercury="full">
-          <%= raw @blog.title %>
-        </div>
-      </h2>
-
-      <div id="blog_content" data-mercury="full">
-        <p>
-          <%= raw @blog.content %>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-
-    <hr>
-    <div class="test col-md-2 col-md-offset-1">
-      <form class="small-top-margin">
-        <%= check_box_tag("published", "1", @blog.published ) %>
-        <label class="small-left-margin"> Publish! </label>
-      </form>
-    </div>
-  </div>
-   
+  <%= link_to "Save", "", id: "save-link", data: { save_url: mercury_update_blog_path(@blog) }, class: "hidden" %></p>
+  <%= render "wysiwyg" %>
 </div>
 

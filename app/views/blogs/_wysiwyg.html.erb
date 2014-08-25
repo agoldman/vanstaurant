@@ -1,0 +1,26 @@
+<div class="row large-top-margin">
+  <div class="col-md-10 col-md-offset-1">
+    <h2> 
+      <div id="blog_title" data-mercury="full" class="green-font">
+        <%= raw @blog.title %>
+      </div>
+    </h2>
+
+    <div id="blog_content" data-mercury="full" style="height:200px;">
+      <p>
+        <%= raw @blog.content %>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="row medium-top-margin col-xs-4 col-xs-offset-1 ">
+
+    <form class="small-top-margin medium-font">
+      <%= check_box_tag("published", "1", @blog.published, class: "hidden") %>
+      <%= fa_icon "square-o", class: "no-margin custom-checkbox" %>
+      <%= fa_icon "check-square", class: "hidden custom-checkbox" %>
+      <label> Published </label>
+    </form>
+
+</div>

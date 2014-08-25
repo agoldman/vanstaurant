@@ -1,6 +1,9 @@
+<script>
+  $(function() {
+    var s = skrollr.init();
+  });
+</script>
 
- 
-    
 <div class="row text-center" style="height:500px;">
   <img src="assets/van-large.jpg" style="position: fixed; top: -325px; width:100%; left: 0; z-index: -2;">
   <div style="position: fixed; top: 0px; left: 8%;">
@@ -12,23 +15,27 @@
   
     <div class="text-center" style="position: fixed; top: 0px; width: 100%; left: 0; margin-top:15%; z-index:-1;">
       
-      <div class="row">
+      <div class="row"
+        data-center="opacity: 1.5"
+        data-80-top="opacity: 0">
         <h1 class="yellow-font title-size"> VANSTAURANT </h1>
       </div>
 
-      <div class="row">
-          <h4 class="green-font helvetica small-neg-top-margin"> Where we spray on cooking, climbing, building, and all things van life.</h4>
+      <div class="row"
+        data-center="opacity: 1.5"
+        data-230-top="opacity: 0">
+          <h4 class="green-font helvetica small-neg-top-margin"> A place to spray on cooking, climbing, building, and all things van life.</h4>
       </div>
     </div>
 
 
-  <div style="position: fixed; top: 0px; right: 8%;">
+  <div style="position: fixed; top: 0px; right: 8%; z-index: 3;">
     <a class="btn btn-lg medium-top-margin btn-primary" href="/about"> About Us </a>
   </div>
 </div>
 
 
-<div class="row blog large-top-margin white-background" style="position:relative; z-index:2;">
+<div class="row blog large-top-margin white-background" style="position:relative; z-index:2; background-color:rgba(0, 0, 0, 0.5);">
   <div class="col-xs-10 col-xs-offset-1">
     <%= render @blogs %>
   </div>

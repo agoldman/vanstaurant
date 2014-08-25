@@ -485,6 +485,13 @@ window.Mercury = {
           $("#mercury_iframe").contents().find("#published").click();
         });
       });
+   
+
+      var link = $('#mercury_iframe').contents().find('#save-link');
+      if(link.length) {
+        Mercury.saveUrl = link.data('save-url');
+      }
+
     });
   }
 
