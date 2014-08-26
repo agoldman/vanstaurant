@@ -23,6 +23,11 @@ li{
   @extend .small-top-margin;
 }
 
+ul{
+list-style-type: none;
+}
+
+
 label{
   @extend .small-top-margin;
 }
@@ -68,9 +73,7 @@ p{
   background-image:image-url('utah.png');
   background-repeat: no-repeat;
   background-position:center; 
-  
 }
-
 
 .welcome{
   background-attachment: fixed; 
@@ -81,13 +84,6 @@ p{
   background-repeat: no-repeat;
   background-position: 0px -325px;
 
-}
-
-.admin{
-  min-height: 800px;
-  background-image:image-url('van2.jpeg');
-  background-repeat: no-repeat;
-  background-position:center; 
 }
 
 .hidden{
@@ -113,6 +109,36 @@ p{
 /* BACKGROUNDS */
 .black-background {
   background-color: $black;
+}
+
+.shuteye-background{
+  background-image: image-url('shuteye.jpg');
+  background-repeat: no-repeat;
+  background-position:center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;  
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.indian-sunset-background{
+  background-image: image-url('indian-sunset.jpeg');
+  background-repeat: no-repeat;
+  background-position:center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;  
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 
@@ -380,7 +406,11 @@ a:hover {
   margin-top: 75px;
 }
 
-.large-bottom-padding{
+.xlarge-top-padding{
+  padding-top: 75px;
+}
+
+.xlarge-bottom-padding{
   padding-bottom: 75px;
 }
 
@@ -432,10 +462,6 @@ a:hover {
   margin-bottom: 50px;
 }
 
-.large-bottom-padding{
-  padding-bottom: 50px;
-}
-
 .small-left-margin{
   margin-left: 10px;
 }
@@ -454,6 +480,15 @@ a:hover {
 
 .small-left-margin{
   margin-left: 10px;
+}
+
+
+.large-top-padding{
+  padding-top: 50px;
+}
+
+.large-bottom-padding{
+  padding-bottom: 50px;
 }
 
 /****************** CUSTOM FONTS ***************/
