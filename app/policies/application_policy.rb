@@ -47,5 +47,6 @@ class ApplicationPolicy
         scope.where(:published => true)
       end
     end
+  end
 end
 

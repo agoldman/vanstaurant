@@ -1,6 +1,6 @@
 class PagePolicy < Struct.new(:user, :page)
 
   def admin?
-    user.admin?
+    user && user.admin?
   end
 end

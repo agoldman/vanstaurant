@@ -56,6 +56,11 @@ p{
   margin-top: 20px;
 }
 
+.footer{
+  height: 8%;
+  background-color: black;
+}
+
 .new-menu{
   min-height: 800px;
   background-size: 100%;
@@ -78,8 +83,8 @@ p{
 }
 
 .admin{
-  min-height: 650px;
-  background-image:image-url('van2.jpg');
+  min-height: 800px;
+  background-image:image-url('van2.jpeg');
   background-repeat: no-repeat;
   background-position:center; 
 }
@@ -112,6 +117,10 @@ p{
 
 .green-font{
   color: $green;
+}
+
+.bright-green-font{
+  color: $bright-green;
 }
 
 .medium-font{
@@ -277,6 +286,19 @@ a:hover {
   color: $yellow;
 }
 
+.btn-default-clear{
+  color: $yellow;
+  border-color: $yellow;
+  background-color: none;
+  background: none;
+}
+
+.btn-default-clear:hover{
+  font-color: rgba(0, 0, 0, 0) !important;
+  border-color: $yellow;
+  background-color: $yellow;
+}
+
 .btn:visited{
   background-color: none;
   background: none;
@@ -292,6 +314,7 @@ a:hover {
   background-color: none;
   background: none;
   color: $blue;
+  border-color: $blue;
 }
 
 .btn-primary{
@@ -351,6 +374,10 @@ a:hover {
   margin-top: 75px;
 }
 
+.large-bottom-padding{
+  padding-bottom: 75px;
+}
+
 .xxlarge-top-margin{
   margin-top: 100px;
 }
@@ -378,8 +405,17 @@ a:hover {
 .medium-right-margin{
   margin-right: 50px;
 }
+
+.small-bottom-padding{
+  padding-bottom: 10px;
+}
+
 .medium-bottom-padding{
   padding-bottom:30px;
+}
+
+.medium-padding{
+  padding: 30px;
 }
 
 .no-top-margin{
@@ -388,6 +424,10 @@ a:hover {
 
 .large-bottom-margin{
   margin-bottom: 50px;
+}
+
+.large-bottom-padding{
+  padding-bottom: 50px;
 }
 
 .small-left-margin{

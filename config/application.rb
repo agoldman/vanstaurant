@@ -25,5 +25,9 @@ module Vanstaurant
     config.assets.precompile += [
       'application.css.scss', 'custom.css.scss'
     ]
+
+    config.to_prepare do
+        Devise::SessionsController.layout "application"
+    end
   end
 end

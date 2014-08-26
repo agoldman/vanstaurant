@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
 
+  
   def configure_permitted_parameters
     devise_parameter_sanitizer.for(:sign_up) << :name
   end
@@ -15,7 +16,8 @@ class ApplicationController < ActionController::Base
   end
 
   def user_not_authorized
-    flash[:error] = "This page is for admins only. Nice try!!!"
-    redirect_to(request.referrer || root_path)
+    flash[:notice] = "Sign in as an admin. Vanstaurant is love."
+    redirect_to new_user_session_path
   end
+
 end

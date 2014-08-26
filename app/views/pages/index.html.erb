@@ -6,11 +6,20 @@
 
 <div class="row text-center" style="height:500px;">
   <img src="assets/van-large.jpg" style="position: fixed; top: -280px; width:100%; left: 0; z-index: -2;">
-  <div style="position: fixed; top: 0px; left: 8%;">
-    <% if @menu %>
-    <a class="btn btn-xlg bright-green-btn medium-top-margin"> Menu - <%= @menu.location + " " + @menu.day.strftime("%A %b %d") %> </a> 
-    <% end %>
+  <div style="height:11%; position:fixed; top: 0px; right: 0px; left: 0px; background-color:black; z-index: 2;">
   </div>
+  <div class="medium-top-margin" style="position: fixed; top: 0px; z-index: 3;">
+    <div class="green-font helvetica" style="position: fixed; right: 18%;">
+          <% if @menu %>
+            <a class="btn btn-lg bright-green-btn inline"> Menu: <%= @menu.location + " - " + @menu.day.strftime("%b %e") %></a> 
+          <% end %>
+    </div>
+
+    <div style="position: fixed; right: 8%;">
+      <a class="btn btn-lg btn-primary inline" href="/about"> About Us </a>
+    </div>
+  </div>
+
 
   
     <div class="text-center" style="position: fixed; top: 0px; width: 100%; left: 0; margin-top:17%; z-index:-1;">
@@ -28,15 +37,12 @@
       </div>
     </div>
 
-
-  <div style="position: fixed; top: 0px; right: 8%; z-index: 3;">
-    <a class="btn btn-lg medium-top-margin btn-primary" href="/about"> About Us </a>
-  </div>
 </div>
 
 
-<div class="row blog large-top-margin white-background" style="position:relative; z-index:2; background-color:rgba(0, 0, 0, 0.5);">
+<div class="row blog large-top-margin xlarge-bottom-padding" style="z-index:2; background-color:rgba(0, 0, 0, 0.5);">
   <div class="col-xs-10 col-xs-offset-1">
     <%= render @blogs %>
   </div>
 </div>
+
