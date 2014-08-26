@@ -9,6 +9,7 @@ $darker-blue: #19354F;
 $red: #D60C12;
 $bright-green: #CDD670;
 $brighter-green: #F7FF9F;
+$black: #1E1A1B;
 
 /* TAGS */
 
@@ -223,9 +224,8 @@ input[type=checkbox]{
 }
 
 /* Nav */
-
-.admin-nav{
-  font-size: 30px;
+.navbar{
+  background-color: $black;
 }
 
 /* DISPLAY */

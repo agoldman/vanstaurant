@@ -2,6 +2,8 @@ class PagesController < ApplicationController
 
   after_action :verify_authorized, :only => :admin
 
+  layout "simple", only: [:about, :admin]
+  
   def index
     @blogs = Blog.published
     @menu = Menu.latest if Menu.upcoming?
