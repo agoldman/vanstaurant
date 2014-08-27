@@ -1,0 +1,10 @@
+ <div class="logout">
+    <% if current_user %>
+        <div class="medium-top-margin">
+          <div class="yellow-font helvetica inline inline"> 
+
+          </div>
+          <%= link_to current_user.name + ", Log Out", destroy_user_session_path, method: :delete, class: "inline btn btn-lg btn-default-clear" %>
+        </div>
+      <% end %>
+  </div>

@@ -9,7 +9,10 @@ $darker-blue: #19354F;
 $red: #D60C12;
 $bright-green: #CDD670;
 $brighter-green: #F7FF9F;
+$light-black: #2C2A2B;
 $black: #1E1A1B;
+$purple: #A970D6;
+$dark-purple: #612C8A;
 
 /* TAGS */
 
@@ -74,6 +77,13 @@ p{
   background-image:image-url('utah.png');
   background-repeat: no-repeat;
   background-position:center; 
+}
+
+.logout {
+  position: fixed;
+  top: 0px;
+  left: 5%;
+  z-index: 4;
 }
 
 .welcome{
@@ -272,7 +282,7 @@ input[type=checkbox]{
 
 /* Nav */
 .navbar{
-  background-color: $black;
+  background-color: $light-black;
 }
 
 /* DISPLAY */
@@ -332,14 +342,24 @@ a:hover {
   color: $yellow;
 }
 
+.purple-btn{ 
+  background-color: $purple;
+  color: $yellow;
+}
+
+.purple-btn:hover{ 
+  background-color: $dark-purple;
+  color: $yellow;
+}
+
 .bright-green-btn:hover{
   background-color: $brighter-green;
   color: $yellow;
 }
 
 .btn-default-clear{
-  color: $yellow;
-  border-color: $yellow;
+  color: $green;
+  border-color: $green;
   background-color: none;
   background: none;
 }
@@ -413,8 +433,16 @@ a:hover {
   margin-top: 10px;
 }
 
+.small-top-padding{
+  padding-top: 10px;
+}
+
 .medium-top-margin{
   margin-top: 30px;
+}
+
+.medium-top-padding{
+  padding-top: 30px;
 }
 
 .large-top-margin{
@@ -466,7 +494,7 @@ a:hover {
 }
 
 .medium-bottom-padding{
-  padding-bottom:30px;
+  padding-bottom: 30px;
 }
 
 .medium-padding{
@@ -483,6 +511,10 @@ a:hover {
 
 .small-left-margin{
   margin-left: 10px;
+}
+
+small-left-padding{
+  padding-left: 10px;
 }
 
 .medium-left-margin{
