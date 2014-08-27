@@ -1,32 +1,25 @@
-<!-- <div class="indian-creek-clouds">
+<div class="indian-creek-clouds">
 </div>
 
-<div class="col-md-8 col-md-offset-2 large-top-padding xlarge-bottom-padding black-background xxlarge-top-margin large-left-padding large-right-padding">
+<div class="col-md-8 col-md-offset-2 medium-top-padding xlarge-bottom-padding black-background xxlarge-top-margin large-left-padding large-right-padding black-background">
+
+    <form class="medium-font">
+      <%= check_box_tag("published", "1", @blog.published, class: "hidden") %>
+      <%= fa_icon "square-o", class: "no-margin custom-checkbox" %>
+      <%= fa_icon "check-square", class: "hidden custom-checkbox" %>
+      <label> Published </label>
+    </form>
+
     <h2> 
       <div id="blog_title" data-mercury="full" class="green-font">
         <%= raw @blog.title %>
       </div>
     </h2>
 
-    <div id="blog_content" data-mercury="full" style="height:200px;">
+    <div id="blog_content" class="black-background" data-mercury="full" style="height:200px; overflow: scroll;">
       <p>
         <%= raw @blog.content %>
       </p>
     </div>
 
-    <div class="medium-top-margin">
-      <form class="small-top-margin medium-font">
-        <%= check_box_tag("published", "1", @blog.published, class: "hidden") %>
-        <%= fa_icon "square-o", class: "no-margin custom-checkbox" %>
-        <%= fa_icon "check-square", class: "hidden custom-checkbox" %>
-        <label> Published </label>
-      </form>
-    </div>
-
-  </div> -->
-
-    <div id="blog_content blue-font" data-mercury="full" style="height:200px;">
-      <p>
-        <%= raw @blog.content %>
-      </p>
-    </div>
+</div>
