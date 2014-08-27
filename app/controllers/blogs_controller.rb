@@ -8,6 +8,7 @@ class BlogsController < ApplicationController
     @blog = Blog.new
     @blog.title = "Title"
     @blog.content = "Write the blog post here. Make it real good!"
+    render layout: "no-nav"
   end
 
   def edit
@@ -26,7 +27,6 @@ class BlogsController < ApplicationController
 
   def show
     @blog = Blog.find(params[:id])
-    render layout: "dark"
   end
 
   def mercury_create
