@@ -106,7 +106,6 @@ p{
   border-color: $blue;  
 }
 
-/* BACKGROUNDS */
 .black-background {
   background-color: $black;
 }
@@ -128,6 +127,21 @@ p{
 
 .indian-sunset-background{
   background-image: image-url('indian-sunset.jpeg');
+  background-repeat: no-repeat;
+  background-position:center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;  
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.indian-creek-clouds{
+  background-image: image-url('indian-creek-clouds.jpeg');
   background-repeat: no-repeat;
   background-position:center; 
   -webkit-background-size: cover;
@@ -489,6 +503,22 @@ a:hover {
 
 .large-bottom-padding{
   padding-bottom: 50px;
+}
+
+.large-left-padding{
+  padding-left: 50px;
+}
+
+.large-right-padding{
+  padding-right: 50px;
+}
+
+.medium-left-padding{
+  padding-left: 30px;
+}
+
+.medium-right-padding{
+  padding-right: 30px;
 }
 
 /****************** CUSTOM FONTS ***************/

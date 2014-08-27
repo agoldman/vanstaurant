@@ -26,6 +26,7 @@ class BlogsController < ApplicationController
 
   def show
     @blog = Blog.find(params[:id])
+    render layout: "dark"
   end
 
   def mercury_create
