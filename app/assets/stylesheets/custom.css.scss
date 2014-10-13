@@ -13,6 +13,7 @@ $light-black: #2C2A2B;
 $black: #1E1A1B;
 $purple: #A970D6;
 $dark-purple: #612C8A;
+$dark-green: #5E632A;
 
 /* MOBILE */
 
@@ -29,18 +30,29 @@ $dark-purple: #612C8A;
 
 .btn-mobile{
   height: 18%;
+  line-height: 18%;
   font-family: "Helvetica";
   font-size: 60px;
-  background-color: $dark-blue;
+  background-color: $dark-purple;
   color: $beige;
+  font-weight: bold;
 }
 
 .btn-mobile-bright{
   height: 18%;
+  line-height: 18%;
   font-family: "Helvetica";
   font-size: 60px;
-  background-color: $yellow;
-  color: $dark-blue;
+  background-color: $brighter-green;
+  color: $dark-green;
+  font-weight: bold;
+}
+
+.vertical-text{
+  position: relative;
+  top: 50%; 
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
 }
 
 /* TAGS */
