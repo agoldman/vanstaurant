@@ -14,6 +14,35 @@ $black: #1E1A1B;
 $purple: #A970D6;
 $dark-purple: #612C8A;
 
+/* MOBILE */
+
+.mobile-van-background{
+  background-image: image-url('van-large.jpg');
+  background-repeat: no-repeat;
+  background-position:center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 66%;  
+}
+
+.btn-mobile{
+  height: 18%;
+  font-family: "Helvetica";
+  font-size: 60px;
+  background-color: $dark-blue;
+  color: $beige;
+}
+
+.btn-mobile-bright{
+  height: 18%;
+  font-family: "Helvetica";
+  font-size: 60px;
+  background-color: $yellow;
+  color: $dark-blue;
+}
+
 /* TAGS */
 
 body{
