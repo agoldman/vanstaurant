@@ -18,7 +18,7 @@ $dark-green: #5E632A;
 /* MOBILE */
 
 .mobile-van-background{
-  background-image: image-url('van-large.jpg');
+  background-image: image-url('van-desert-mobile.jpg');
   background-repeat: no-repeat;
   background-position:center; 
   -webkit-background-size: cover;
@@ -32,7 +32,7 @@ $dark-green: #5E632A;
   height: 18%;
   line-height: 18%;
   font-family: "Helvetica";
-  font-size: 60px;
+  font-size: 80px;
   background-color: $dark-purple;
   color: $beige;
   font-weight: bold;
@@ -43,7 +43,7 @@ $dark-green: #5E632A;
   line-height: 18%;
   font-family: "Helvetica";
   font-size: 60px;
-  background-color: $brighter-green;
+  background-color: $yellow;
   color: $dark-green;
   font-weight: bold;
 }
