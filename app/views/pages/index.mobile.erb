@@ -1,5 +1,7 @@
 <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
 
+<div class="black-background">
+
  <div class="container-fluid">
   <div class="row mobile-van-background">
     <div class="col-xs-12">
@@ -17,11 +19,14 @@
   </div>
 
   <div class="row text-center btn-mobile"> 
-    <div class="vertical-text"> Blog
+    <div class="vertical-text"> 
+      <%= link_to "Latest Blog", blog_path(@blogs.first), class: "blue-font"%>
     </div>
   </div>
+
   <div class="row text-center btn-mobile-bright"> 
     <div class="vertical-text"> Next Menu
     </div>
   </div>
+</div>
 </div>

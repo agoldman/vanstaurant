@@ -17,6 +17,15 @@ $dark-green: #5E632A;
 
 /* MOBILE */
 
+.no-padding {
+  padding:0;
+}
+
+.full-width{
+  width:100%;
+  display:block; 
+}
+
 .mobile-van-background{
   background-image: image-url('van-desert-mobile.jpg');
   background-repeat: no-repeat;
@@ -32,9 +41,8 @@ $dark-green: #5E632A;
   height: 18%;
   line-height: 18%;
   font-family: "Helvetica";
-  font-size: 80px;
-  background-color: $blue;
-  color: $beige;
+  font-size: 80px;  
+  width: 100%;
   font-weight: bold;
 }
 
@@ -160,6 +168,7 @@ p{
 
 .black-background {
   background-color: $black;
+  height: 100%;
 }
 
 .shuteye-background{
