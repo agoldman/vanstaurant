@@ -1,5 +1,11 @@
+<% content_for :head do %>
+  <meta property="og:title" content="<%=@blog.title%>"/> 
+  <meta property="og:type" content="website"/> 
+  <meta property="og:url" content="<%=blog_url(@blog)%>"/> 
+<% end %>
+
 <div class="indian-creek-clouds">
 </div>
-  <div class="col-md-8 col-md-offset-2 large-top-padding xlarge-bottom-padding black-background xxxlarge-top-margin large-left-padding large-right-padding large-bottom-margin">
-    <%= render @blog %>
-  </div>
+<div class="col-md-8 col-md-offset-2 large-top-padding xlarge-bottom-padding black-background xxxlarge-top-margin large-left-padding large-right-padding large-bottom-margin">
+  <%= render @blog %>
+</div>
