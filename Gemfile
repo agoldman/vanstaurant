@@ -17,6 +17,9 @@ group :development do
   gem "better_errors"
 end
 
+
+gem 'newrelic_rpm'
+
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'sass-rails', '~> 4.0.2'
@@ -47,6 +50,8 @@ gem "font-awesome-rails"
 gem 'devise'
 
 gem 'simple_form'
+
+gem 'figaro'
 
 gem 'mercury-rails', :git => 'git://github.com/jejacks0n/mercury.git'
 gem 'skrollr-rails'
