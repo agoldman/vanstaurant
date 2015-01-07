@@ -43,11 +43,11 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-gem 'pundit', '~> 0.3.0'
-
 gem "font-awesome-rails"
 
+# Authorizations 
 gem 'devise'
+gem 'pundit', '~> 0.3.0'
 
 gem 'simple_form'
 

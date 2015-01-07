@@ -1,10 +1,12 @@
 class BlogsController < ApplicationController
 
   def index
+    authorize :page, :admin?
     @blogs = Blog.order('created_at DESC')
   end
 
   def new
+    authorize :page, :admin?
     @blog = Blog.new
     @blog.title = "Title"
     @blog.content = "Write the blog post here. Make it real good!"
@@ -12,10 +14,12 @@ class BlogsController < ApplicationController
   end
 
   def edit
+    authorize :page, :admin?
     @blog = Blog.find(params[:id])
   end
 
   def mercury_update
+    authorize :page, :admin?
     blog = Blog.find(params[:id])
     blog.title = params[:blog_title][:value] if params[:blog_title]
     blog.author = current_user.name if current_user
@@ -30,6 +34,7 @@ class BlogsController < ApplicationController
   end
 
   def mercury_create
+    authorize :page, :admin?
     blog = Blog.new
     blog.title = params[:blog_title][:value] if params[:blog_title]
     blog.author = current_user.name if current_user
@@ -44,6 +49,7 @@ class BlogsController < ApplicationController
   end
 
   def destroy
+    authorize :page, :admin?
     @blog = Blog.find(params[:id])
     title = @blog.title
     if @blog.destroy
