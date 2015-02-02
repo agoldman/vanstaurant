@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
-ruby '2.1.1'
 
 group :production do
   gem 'pg'
@@ -11,7 +10,6 @@ end
 
 group :development do
   gem 'sqlite3'
-  gem 'debugger'
   gem 'pry'
   gem 'binding_of_caller'
   gem "better_errors"
@@ -72,6 +70,9 @@ end
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
-# Use debugger
-# gem 'debugger', group: [:development, :test]
 gem 'paperclip'
+
+gem 'will_paginate', '~> 3.0.6'
+
+
+

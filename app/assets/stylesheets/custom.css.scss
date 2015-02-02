@@ -155,6 +155,22 @@ p{
 
 /* Backgrounds and Borders */
 
+/* BACKGROUNDS */
+
+.green-background{
+  background-color: $green;
+  color: $beige;
+}
+
+.blue-background{
+  background-color: $blue;
+  color: $green;
+}
+
+.red-font{
+  color: $red;
+}
+
 .beige-background{
   background-color: $beige;
 }
@@ -170,7 +186,7 @@ p{
 }
 
 .black-background {
-  background-color: $black;
+  background-color: $light-black;
   height: 100%;
 }
 
@@ -264,21 +280,6 @@ p{
 
 .yellow-font{
   color: $yellow; 
-}
-/* BACKGROUNDS */
-
-.green-background{
-  background-color: $green;
-  color: $beige;
-}
-
-.blue-background{
-  background-color: $blue;
-  color: $green;
-}
-
-.red-font{
-  color: $red;
 }
 
 /* FORMS */

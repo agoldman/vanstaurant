@@ -1,14 +1,6 @@
-<div class="row blog large-top-margin">
-  <div class="col-md-10 col-md-offset-2">
-    <% @blogs.each do |blog| %>
-        <div class="helvetica inline"> <%= blog.created_at.strftime("%A %B %d, %Y") %> </div>
-        <div class="medium-font helvetica green-font inline small-left-margin">
-          <%= blog.title %>
-        </div>
-        <%=link_to "edit", "/editor" + edit_blog_path(blog), class: "helvetica blue-font underline" %>
-        <%=link_to "delete", blog, method: :delete, class: "helvetica blue-font underline small-left-margin", data: { confirm: 'You  sure you want to delete this blog post?' } %>
-        <br>  
-        <br>
-    <% end %>
+<div class="row blog xxlarge-top-margin xlarge-bottom-padding">
+  <div class="col-xs-10 col-xs-offset-1">
+    <%= render @blogs %>
+    <%= will_paginate @blogs %>
   </div>
 </div>

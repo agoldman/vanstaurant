@@ -1,6 +1,11 @@
 class BlogsController < ApplicationController
 
   def index
+    @blogs = Blog.published(params[:page])
+    render layout: "dark-backgrnd-dark-nav"
+  end
+
+  def admin_overview
     authorize :page, :admin?
     @blogs = Blog.order('created_at DESC')
   end

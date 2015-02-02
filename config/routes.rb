@@ -17,7 +17,10 @@ Vanstaurant::Application.routes.draw do
   resources :menus
   resources :users
   resources :blogs  do
-    collection { put :mercury_create }
+    collection do
+      get :admin_overview
+      put :mercury_create
+    end
     member { put :mercury_update }
   end
 
