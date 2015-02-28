@@ -2,6 +2,7 @@
   <meta property="og:title" content="<%=@blog.title%>"/> 
   <meta property="og:type" content="website"/> 
   <meta property="og:url" content="<%=blog_url(@blog)%>"/> 
+  <meta property="og:description" content="<%=raw @blog.content[0, 400]%>"
 <% end %>
 
 <div class="indian-creek-clouds">
