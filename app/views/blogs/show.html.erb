@@ -2,7 +2,7 @@
   <meta property="og:title" content="<%=@blog.title%>"/> 
   <meta property="og:type" content="website"/> 
   <meta property="og:url" content="<%=blog_url(@blog)%>"/> 
-  <meta property="og:description" content="<%=strip_tags(@blog.content[0, 400])%>"
+  <meta property="og:description" content="<%=sanitize(@blog.content[0, 400], :tags=>[])%>"
 <% end %>
 
 <div class="indian-creek-clouds">
