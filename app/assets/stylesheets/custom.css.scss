@@ -14,6 +14,7 @@ $black: #333333;
 $purple: #A970D6;
 $dark-purple: #612C8A;
 $dark-green: #5E632A;
+$gray: gray;
 
 /* MOBILE */
 
@@ -109,7 +110,7 @@ hr{
 }
 
 p{
-  color: $yellow;
+  color: $gray;
   @extend .medium-font;
   @extend .droid-serif;
 }
@@ -280,6 +281,10 @@ p{
 
 .yellow-font{
   color: $yellow; 
+}
+
+.gray-font{
+  color: gray !important;
 }
 
 /* FORMS */
