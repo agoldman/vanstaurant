@@ -59,7 +59,7 @@ class BlogsController < ApplicationController
     title = @blog.title
     if @blog.destroy
       flash[:notice] = "\"#{title}\" was deleted successfully."
-      redirect_to admin_overview_blogs
+      redirect_to admin_overview_blogs_path
     else
       flash[:error] = "There was an error deleting this blog."
       render :show
