@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150413174646) do
+ActiveRecord::Schema.define(version: 20150508235140) do
 
   create_table "blogs", force: true do |t|
     t.string   "title"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20150413174646) do
     t.datetime "updated_at"
     t.boolean  "published"
     t.string   "og_image"
+    t.string   "og_description"
   end
 
   create_table "items", force: true do |t|

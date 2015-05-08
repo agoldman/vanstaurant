@@ -2,7 +2,7 @@
   <meta property="og:title" content="<%=@blog.title%>"/> 
   <meta property="og:type" content="website"/> 
   <meta property="og:url" content="<%=blog_url(@blog)%>"/> 
-  <meta property="og:description" content="<%= @blog.content ? strip_tags(@blog.content).html_safe : "Van Love"%>">
+  <meta property="og:description" content="<%= strip_tags(@blog.og_description).html_safe%>">
   <meta property="og:image" content="<%=@blog.og_image%>">
 <% end %>
 
