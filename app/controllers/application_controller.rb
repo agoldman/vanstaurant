@@ -3,8 +3,6 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   include Pundit
 
-  before_filter :prepare_for_mobile
-
   protect_from_forgery with: :exception
   before_action :configure_permitted_parameters, if: :devise_controller?
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
@@ -23,16 +21,6 @@ class ApplicationController < ActionController::Base
     else
       redirect_to new_user_session_path
     end
-  end
-
-  private
-  def mobile_device?
-    request.user_agent =~ /Mobile|webOS/
-  end
-  helper_method :mobile_device?
-
-  def prepare_for_mobile
-    request.format = :mobile if mobile_device?
   end
 
 end

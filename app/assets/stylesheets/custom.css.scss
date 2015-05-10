@@ -1,6 +1,6 @@
 /* VARIABLES */
 
-$blue: #4F6D8A;
+$blue: #516F8B;
 $beige: #EAE5DE;
 $green: #B6B088;
 $yellow: #FFFFFE;
@@ -42,18 +42,18 @@ $gray: gray;
   height: 18%;
   line-height: 18%;
   font-family: "Helvetica";
-  font-size: 80px;  
-  width: 100%;
+  font-size: 50px;
   font-weight: bold;
+  background-color: $blue;
 }
 
 .btn-mobile-bright{
   height: 18%;
   line-height: 18%;
   font-family: "Helvetica";
-  font-size: 80px;
-  background-color: $green;
-  color: $beige;
+  font-size: 50px;
+  background-color: $bright-green;
+  color: $blue;
   font-weight: bold;
 }
 
@@ -64,14 +64,31 @@ $gray: gray;
   -webkit-transform: translateY(-50%);
 }
 
+/* MOBILE */
+@media (max-width: 767px){
+  .full-height{
+    height: 100% !important;
+  }
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+  body{
+    min-width:1000px;
+    width: auto !important;
+    width:1000px;
+  }
+  h1{
+  font-size: 90px;
+  }
+}
+
 /* TAGS */
 
 body{
   background-color: $yellow;
   color: $blue;
-  min-width:1000px; /* suppose you want minimun width of 1000px */
-  width: auto !important;  /* Firefox will set width as auto */
-  width:1000px;             /* As IE ignores !important it will set width as 1000px; */
   @extend .droid-serif;
 }
 
@@ -86,10 +103,6 @@ list-style-type: none;
 
 label{
   @extend .small-top-margin;
-}
-
-h1{
-  font-size: 90px;
 }
 
 h2{
@@ -188,7 +201,7 @@ p{
 
 .black-background {
   background-color: $light-black;
-  height: 100%;
+  background-size: 100%;
 }
 
 .shuteye-background{
@@ -259,6 +272,14 @@ p{
   font-size: 50px;
 }
 
+.xlarge-font{
+  font-size: 60px;
+}
+
+.title-size{
+  font-size: 120px;
+}
+
 .league{
   font-family: 'League Gothic';
 }
@@ -269,10 +290,6 @@ p{
 
 .droid-serif{
   font-family: 'Droid Serif', serif;
-}
-
-.title-size{
-  font-size: 120px;
 }
 
 .green-font{
@@ -386,6 +403,10 @@ a.bright-green-font:hover{
 a:hover {
   color: $bright-green;
   text-decoration: none;
+}
+
+.btn-mobile-bright a:hover{
+  color: $yellow;
 }
 
 .btn{
