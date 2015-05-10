@@ -6,8 +6,20 @@
   <meta property="og:image" content="<%=@blog.og_image%>">
 <% end %>
 
-<div class="indian-creek-clouds">
+<div class="hidden-xs">
+  <div class="indian-creek-clouds">
+  </div>
+  <div class="col-md-8 col-md-offset-2 large-top-padding xlarge-bottom-padding black-background xxxlarge-top-margin large-left-padding large-right-padding large-bottom-margin">
+    <%= render @blog %>
+  </div>
 </div>
-<div class="col-md-8 col-md-offset-2 large-top-padding xlarge-bottom-padding black-background xxxlarge-top-margin large-left-padding large-right-padding large-bottom-margin">
-  <%= render @blog %>
+
+<div class="visible-xs-block full-height">
+  <div class="full-height">
+    <div class="black-background">
+      <div class="col-md-8 col-md-offset-2 xxlarge-top-padding xlarge-bottom-padding large-left-padding large-right-padding">
+        <%= render @blog %>
+      </div>
+    </div>
+  </div>
 </div>
